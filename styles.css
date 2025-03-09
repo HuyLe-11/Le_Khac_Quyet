@@ -12,6 +12,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh; /* Đảm bảo full màn hình */
+    background-size: cover;
     background: url('src/banner.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
@@ -25,7 +26,29 @@ body {
     margin: 0; /* Đảm bảo không có khoảng cách */
     padding: 0;
 }
+.banner button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
 
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+.banner button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
 
 .banner.hidden {
     transform: translateY(-100%);
