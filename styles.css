@@ -60,12 +60,13 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 5%; /* Giảm chiều cao navbar xuống còn 5% */
-    background: rgba(0, 0, 0, 0.8);
+    height: 7%; /* Giảm chiều cao navbar xuống còn 5% */
+    background: rgba(0, 0, 0, 1);
     display: flex;
     align-items: center;
     padding: 0 40px; /* Cách lề trái 40px */
     z-index: 999;
+    opacity: 100%;
 }
 
 .nav-logo {
@@ -109,18 +110,26 @@ main {
     padding-top: 100vh;
 }
 
-.content {
+.overviewcontent {
     padding: 20px;
-    max-width: 800px;
+    max-width: 80%;
     margin: auto;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 5%;
+    margin-bottom: 10px;
 }
 footer{
     padding-left: 40px;
+    bottom: 5px;
+    background: #222;
+    color: white;
+    /* text-align: center; */
+    padding: 5px;
+    width: 100%;
 }
+
 /* Phần hiệu ứng mũi tên động */
 .scroll-down {
     position: absolute;
@@ -199,6 +208,3 @@ footer{
     color: #333;
     margin-top: 10px;
 }
-
-
-

@@ -1,12 +1,25 @@
+// window.addEventListener('scroll', function() {
+//     const banner = document.getElementById('banner');
+//     if (window.scrollY > 50) {
+//         banner.classList.add('hidden');
+
+//     } else {
+//         banner.classList.remove('hidden');
+//     }
+// });
+
 window.addEventListener('scroll', function() {
     const banner = document.getElementById('banner');
-    if (window.scrollY > 50) {
+    if (window.scrollY > 0) {
         banner.classList.add('hidden');
+        document.body.classList.add("fade-out"); // Kích hoạt hiệu ứng mờ dần
+        setTimeout(() => {
+            window.location.href = "overview.html"; // Chuyển trang sau khi hiệu ứng chạy xong
+        }, 500); // Đợi 0.5 giây để hiệu ứng hoàn tất
     } else {
         banner.classList.remove('hidden');
     }
 });
-
 function showEmail(event) {
     event.preventDefault(); // Ngăn chặn mở email client
     document.getElementById('email-text').classList.toggle('emailhidden');
